@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %}Organizing Committee | Conference{% endblock %}
+
+{% block content %}
+<section class="committee-section">
+  <div class="container">
+
+    <h2 class="page-title">Organizing Committee</h2>
+    <div class="header-line"></div>
+
+    {% for committee in committees %}
+      <h3 class="committee-title">{{ committee.title }}</h3>
+
+      <div class="committee-grid {% if committee.single %}single{% endif %}">
+        {% for member in committee.members %}
+          <div class="committee-card {% if not member.image %}text-only{% endif %}">
+
+            {% if member.image %}
+              <img src="{{ member.image }}" alt="{{ member.name }}">
+            {% endif %}
+
+            <h4>{{ member.name }}</h4>
+            <p>{{ member.designation }}</p>
+
+          </div>
+        {% endfor %}
+      </div>
+    {% endfor %}
+
+  </div>
+</section>
+{% endblock %}

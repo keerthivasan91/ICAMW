@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}About | ICAMW Conference 2026{% endblock %}
+
+{% block content %}
+<!-- About Conference -->
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>About ICAMW 2026</h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-content">
+                The International Conference on Antennas, Metasurfaces and Wave Propagation (ICAMW) serves as a premier global platform for researchers, academicians, and industry innovators to exchange cutting-edge advancements in electromagnetic theory and modern engineering. As wireless communication rapidly evolves through 5G-Advanced, emerging 6G networks, and THz technologies, the demand for high-performance antennas and intelligent sensing systems has intensified. ICAMW addresses these challenges by focusing on fundamental and applied research in MIMO systems, reconfigurable intelligent surfaces (RIS), and computational electromagnetics, while emphasizing breakthroughs in AI-driven optimization and advanced wave manipulation. By fostering interdisciplinary collaboration, the conference seeks to accelerate innovation across next-generation sensing, biomedical, and space systems through a robust program of keynote addresses, technical presentations, and industry-led tutorials designed to bridge the gap between theoretical research and real-world application.
+            </div>
+
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='Images/image1.png') }}"
+                     alt="ICAMW Conference"
+                     loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

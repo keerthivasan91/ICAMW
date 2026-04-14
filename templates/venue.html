@@ -1,0 +1,61 @@
+{% extends "base.html" %} {% block title %} Venue | UTCA Conference 2026 {%
+endblock %} {% block content %}
+<section class="venue-section">
+  <h2 class="page-title">Venue</h2>
+
+  <!-- Venue Details -->
+  <div class="venue-card">
+    <h3>
+      Department of Electronics and Communication Engineering Cambridge
+      Institute of Technology, K R, Puram, Bengaluru
+      Karnataka, India – 560036
+    </h3>
+    <p>
+      
+    </p>
+  </div>
+
+  <!-- Getting There -->
+  <h2 class="page-title mt-40">Getting There</h2>
+
+  <div class="travel-grid">
+    <div class="travel-card">
+      <h4>By Air</h4>
+      <p>
+        Kempegowda International Airport (BLR) is about 35 km from the campus.
+      </p>
+    </div>
+
+    <div class="travel-card">
+      <h4>By Train</h4>
+      <p>
+        Krishnarajapuram (KR Puram) Railway Station is the nearest station,
+        located around 5 km from the institute. | KSR Bangalore City Junction
+        Railway Station is about 18 km away.
+      </p>
+    </div>
+
+    <div class="travel-card">
+      <h4>By Road</h4>
+      <p>
+        The campus is well connected with NH 75 and is easily accessible by bus,
+        taxi, or auto-rickshaw from various parts of Bangalore.
+      </p>
+    </div>
+  </div>
+  <!-- Map -->
+  <br />
+  <br />
+  <div class="contact-map">
+    <iframe
+      src="https://www.google.com/maps?q=Cambridge%20Institute%20of%20Technology%20K%20R%20Puram%20Bangalore&output=embed"
+      width="100%"
+      height="320"
+      style="border: 0"
+      allowfullscreen
+      loading="lazy"
+    >
+    </iframe>
+  </div>
+</section>
+{% endblock %}

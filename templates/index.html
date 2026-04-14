@@ -1,0 +1,232 @@
+{% extends "base.html" %} {% block title %}Home | UTCA Conference 2026{%
+endblock %} {% block content %}
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">ICAMW Conference 2026</h1>
+      <p class="hero-subtitle">
+        1st International Conference on Antennas, Metasurfaces and Wave Propagation
+      </p>
+
+      <div class="hero-details">
+        <div class="detail-item">
+          <i data-lucide="calendar-days"></i>
+          <span>NOV 20-21, 2026</span>
+        </div>
+        <div class="detail-item">
+          <i data-lucide="map-pin"></i>
+          <span><a href="https://engg.cambridge.edu.in/" target="_blank" rel="noopener" >Cambridge Institute of Technology, Bangalore</a></span>
+        </div>
+      </div>
+
+      <div class="hero-buttons">
+        <a
+          href="{{ url_for('submitpaper') }}"
+          class="btn btn-primary"
+          aria-label="Submit Paper"
+          >Submit Paper</a
+        >
+        <a
+          href="{{ url_for('registration') }}"
+          class="btn btn-secondary"
+          aria-label="Registration"
+        >
+          Registration</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-section" id="about">
+    <div class="container">
+        <div class="section-header">
+            <h2>About <br>Cambridge Institute of Technology, Bangalore, Karnataka, India </h2>
+            <div class="header-line"></div>
+        </div>
+
+        <div class="about-grid">
+            <div class="about-content">
+                Founded in 2007 by the Umesh Education Trust, the Cambridge Institute of Technology (CIT), Bengaluru, is an autonomous institution affiliated with VTU, distinguished by its NAAC A+ and NBA accreditations. Located on a 10-acre campus in K.R. Puram, the institute offers a comprehensive academic portfolio including eight B.E. programs, M.B.A., M.C.A., and various M.Tech and Ph.D. tracks supported by eight research centers.
+
+CIT is recognized as a Scientific and Industrial Research Organization (SIRO) and earned a spot in the 101–150 band of the 2023 NIRF Innovation Rankings. Its infrastructure is notably advanced, featuring industry-sponsored laboratories and a specialized metallic 3D printing facility. The academic environment is driven by a faculty body composed of experts from IITs, NITs, and prestigious international universities. This expertise, combined with a robust placement ecosystem involving over 200 companies like TCS, Rakuten, and HSBC, ensures high industry readiness for its students. Beyond academics, CIT fosters entrepreneurship through its MSME incubation center and a dedicated Section 8 company for research and innovation, maintaining a global legacy through its 10,000+ successful alumni.    
+            </div>
+
+            <div class="about-image">
+                <img src="{{ url_for('static', filename='Images/mainbuilding.jpg') }}"
+                     alt="UTCA Conference"
+                     loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dates-section">
+  <div class="container">
+    <h2 class="page-title">Important Dates</h2>
+    <div class="header-line"></div>
+    <br>
+    <div class="timeline">
+      <!-- Paper Submission Deadline -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i data-lucide="file-text"></i>
+        </div>
+
+        <div class="timeline-content">
+          <h3>Paper Submission Starts</h3>
+          <div class="date">15th May 2026</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i data-lucide="file-text"></i>
+        </div>
+
+        <div class="timeline-content">
+          <h3>Paper Submission Deadline</h3>
+          <div class="date">15th July 2026</div>
+        </div>
+      </div>
+
+      <!-- Acceptance Notification -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i data-lucide="megaphone"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Acceptance Notification</h3>
+          <div class="date">31st August 2026</div>
+          <!--<div class="status">On Time</div>-->
+        </div>
+      </div>
+
+      <!-- Camera Ready Submission -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i data-lucide="camera"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Camera-Ready Submission</h3>
+          <div class="date">20th September 2026</div>
+          <!--<div class="status">Final</div>-->
+        </div>
+      </div>
+
+      <!-- Registration -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i data-lucide="credit-card"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Registration start date</h3>
+          <div class="date">1st September 2026</div>
+          <!--<div class="status">Final</div>-->
+        </div>
+      </div>
+
+      <!-- Registration Deadline -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i data-lucide="credit-card"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Registration Deadline </h3>
+          <div class="date">15th October 2026</div>
+          <!--<div class="status">Mandatory</div>-->
+        </div>
+      </div>
+
+      <!-- Conference Dates -->
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i data-lucide="graduation-cap"></i>
+        </div>
+        <div class="timeline-content">
+          <h3>Conference Dates</h3>
+          <div class="date">20–21 November 2026</div>
+          <div class="status">Main Event</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="explore-section">
+  <div class="container">
+    <span class="explore-badge">Tourist Attractions</span>
+
+    <h2 class="explore-title">Explore <span>Bangalore</span></h2>
+
+    <p class="explore-subtitle">
+      Experience the blend of technology, heritage, greenery, and culture while
+      attending the conference
+    </p>
+
+    <div class="explore-grid">
+      <div class="explore-card">
+        <div class="explore-img">
+          <img
+            src="/static/Images/lalbagh.jpg"
+            alt="Lalbagh Botanical Garden"
+          />
+          <a href="{{ url_for('lalbagh') }}" class="learn-more">
+            Learn More →
+          </a>
+        </div>
+        <h4>Lalbagh</h4>
+      </div>
+
+      <div class="explore-card">
+        <div class="explore-img">
+          <img
+            src="/static/Images/bangalore-palace.jpg"
+            alt="Bangalore Palace"
+          />
+          <a href="{{ url_for('bangalore_palace') }}" class="learn-more">
+            Learn More →
+          </a>
+        </div>
+        <h4>Bangalore Palace</h4>
+      </div>
+
+      <div class="explore-card">
+        <div class="explore-img">
+          <img src="/static/Images/vidhana-soudha.jpg" alt="Vidhana Soudha" />
+          <a href="{{ url_for('vidhana_soudha') }}" class="learn-more">
+            Learn More →
+          </a>
+        </div>
+        <h4>Vidhana Soudha</h4>
+      </div>
+
+      <div class="explore-card active">
+        <div class="explore-img">
+          <img src="/static/Images/nandi-hills.jpg" alt="Nandi Hills" />
+          <a href="{{ url_for('nandi_hills') }}" class="learn-more">
+            Learn More →
+          </a>
+        </div>
+        <h4>Nandi Hills</h4>
+      </div>
+
+      <div class="explore-card">
+        <div class="explore-img">
+          <img
+            src="/static/Images/iskcon-bangalor.jpg"
+            alt="ISKCON Bangalore"
+          />
+          <a href="{{ url_for('iskcon_bangalore') }}" class="learn-more">
+            Learn More →
+          </a>
+        </div>
+        <h4>ISKCON Bangalore</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

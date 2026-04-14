@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block title %}
+Coming Soon | Conference
+{% endblock %}
+
+{% block content %}
+<section class="conference-info">
+  <div class="container">
+    <div class="info-grid">
+
+      <a href="{{ url_for('submission_details') }}" class="info-card">
+        <div class="info-icon">
+          <i data-lucide="file-text"></i>
+        </div>
+        <h3>SUBMISSION DETAILS</h3>
+        <span>Learn more ➡️</span>
+      </a>
+
+      <a href="{{ url_for('author_guidelines') }}" class="info-card">
+        <div class="info-icon">
+          <i data-lucide="graduation-cap"></i>
+        </div>
+        <h3>AUTHOR GUIDELINES</h3>
+        <span>Learn more ➡️</span>
+      </a>
+
+      <a href="{{ url_for('review_process') }}" class="info-card">
+        <div class="info-icon">
+          <i data-lucide="check-circle"></i>
+        </div>
+        <h3>Conference Review Process</h3>
+        <span>Learn more ➡️</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+{% endblock %}
